@@ -13,6 +13,5 @@ public:
 	Menedzer(GeneratorMap *gm, Gracz *gracz, Wizualizator *wizualizator);
 	void Run();
 	bool Koniec();
-	void Ruch(Decyzja decyzja);
 };
 

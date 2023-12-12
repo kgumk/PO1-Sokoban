@@ -10,9 +10,12 @@
 
 int main()
 {
-	GeneratorMapPlik gm("sakoban1.map");
-	Gracz gracz;
-	Wizualizator wizualizator;
-	Menedzer mgr(&gm, gracz, wizualizator);
+	GeneratorMapPlik gm("sokoban1.map");
+	GraczZKonsoli gracz;
+	WizualizatorWKonsoli wizualizator;
+	Menedzer mgr(&gm, &gracz, &wizualizator);
 	mgr.Run();
 }
+
+// kodowanie: http://www.sokobano.de/wiki/index.php?title=Level_format
+// http://sokoban.dk/levels/levels-the-download-page/

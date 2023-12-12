@@ -1,11 +1,10 @@
 #pragma once
-
-enum Decyzja { L, G, P, D };
+#include "Mapa.h"
 
 class Gracz
 {
 	public:
-		virtual Decyzja Decyzja(Mapa *mapa) = 0;
+		virtual ::Decyzja Decyzja(Mapa *mapa) = 0;
 };
 
 class GraczZKonsoli : public Gracz

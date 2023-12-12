@@ -9,7 +9,9 @@ GeneratorMapPlik::GeneratorMapPlik(string nazwaPliku)
 	{
 		string linia;
 		getline(plik, linia);
-		if (linia.size() == 0)
+		if (linia.size() != 0)
+			linie.push_back(linia);
+		else
 			if (linie.size() > 0)
 			{
 				mapy.push_back(Mapa(linie));

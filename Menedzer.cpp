@@ -15,7 +15,7 @@ void Menedzer::Run()
 	{
 		wizualizator->Pokaz(&mapa);
 		Decyzja d = gracz->Decyzja(&mapa);
-		Ruch(d);
+		mapa.Ruch(d);
 	}
 	wizualizator->Pokaz(&mapa);
 }
@@ -23,22 +23,4 @@ void Menedzer::Run()
 bool Menedzer::Koniec()
 {
 	return mapa.Rozwiazane();
-}
-
-void Menedzer::Ruch(Decyzja decyzja)
-{
-	Pozycja poz = mapa.PozycjaAgenta();
-	switch (decyzja)
-	{
-	case L:
-		break;
-	case G:
-		break;
-	case P:
-		break;
-	case D:
-		break;
-	default:
-		break;
-	}
 }
